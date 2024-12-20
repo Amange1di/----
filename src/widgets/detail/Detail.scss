@@ -1,0 +1,55 @@
+.detail {
+  width: 600px;
+  display: flex;
+  background: rgb(248, 248, 248);
+  border-radius: 15px;
+  margin: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  animation-duration: 5s;
+  animation-name: card;
+
+  img {
+    max-width: 200px;
+    border-radius: 10px;
+    animation-duration: 2s;
+    animation-name: img;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .detail__text {
+    margin-left: 10px;
+    padding: 10px;
+    line-height: 1px;
+    margin-top: 15px;
+    color: #333;
+
+    h2 {
+      font-size: 24px;
+
+    }
+
+    p {
+      font-size: 14px;
+      margin: 5px 0;
+      line-height: 1.6;
+    }
+
+
+  }
+}
+
+@media (max-width: 768px) {
+  .detail {
+    flex-direction: column;
+    width: auto !important;
+
+    img {
+
+      max-width: 100%;
+    }
+
+    .detail__text {
+      max-width: 100%;
+    }
+  }
+}

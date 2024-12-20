@@ -1,0 +1,29 @@
+body{
+    background: rgb(39, 43, 51);
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.center{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn_go{
+    width: 200px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #ffff;
+    padding: 5px 10px;
+    margin: 0 auto;
+    animation-duration: 10s;
+    animation-name: btn_go;
+}
