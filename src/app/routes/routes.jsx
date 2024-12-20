@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../../pages/home/Home";
-import Detail from "../../widgets/detail/Detail";
+import DetailName from "../../widgets/detail/DetailName";
 
 const menu = [
   {
@@ -11,7 +11,7 @@ const menu = [
   {
     path: "/detail/:id",
     name: "Detail",
-    component: Detail,
+    component: DetailName,
   },
 ];
 
@@ -22,7 +22,7 @@ const AppRoutes = () => {
         <Route
           key={route.path}
           path={route.path}
-          element={<route.component />}  
+          element={<route.component />}
         />
       ))}
     </Routes>
