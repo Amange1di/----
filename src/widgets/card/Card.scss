@@ -10,10 +10,11 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         animation-duration: 5s;
         animation-name: card;
+        padding: 0;
 
         &_img {
-            height: 200px;
-            width: 200px ;
+            height: 100%;
+            width: 200px;
             animation-duration: 2s;
             animation-name: img;
 
@@ -25,7 +26,7 @@
         }
 
         &_text {
-            padding: 10px  0 10px 10px ;
+            padding: 10px 10px 1px 10px;
 
             .name {
                 font-size: 24px;
@@ -33,7 +34,6 @@
                 text-decoration: none;
                 cursor: pointer;
                 font-weight: 900;
-                line-height: 1px;
 
                 &:hover {
                     color: gold;
@@ -41,39 +41,40 @@
             }
 
             h4 {
-                line-height: 1px;
                 font-size: 16px;
                 color: #fff;
-                // margin-bottom: 30px;
-
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                margin: -2px 0;
             }
 
             p {
                 font-size: 14px;
                 color: #9E9E9E;
-                max-width: 300px;
-                line-height: 1;
             }
         }
     }
 }
 
-@media(max-width: 425px) {
+@media(max-width: 500px) {
+    #card {
+        .card {
+            flex-direction: column;
+            width: auto;
 
-    .card {
-        flex-direction: column;
-        width: auto !important;
+            &_img {
+                width: 100%;
 
-        h4 {
-            text-align: left;
-        }
-
-        &_img {
-            width: 100%;
-
-            img {
-                border-radius: 15px 15px 0 0 !important;
+                img {
+                    width: 100%;
+                    border-radius: 15px 15px 0 0;
+                }
             }
+
+            &_text {
+                padding: 10px;
+            }
+
         }
     }
 }
